@@ -416,7 +416,7 @@ var SCC_DATA = {
     },
     {
       id: "tm-07",
-      name: "Outreach Coordinator",
+      name: "Mazyad Muhammed",
       role: "Outreach Coordinator",
       tagline: "Connecting student founders with external startup ecosystem partners and campus communities.",
       image: "/assets/images/team_member_7.jpg",
