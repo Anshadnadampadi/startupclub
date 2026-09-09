@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startup Club Calicut | Transforming Coders into Entrepreneurs</title>
+  <meta name="description"
+    content="Startup Club Calicut (SCC) is the premier student entrepreneurship launchpad in Calicut, transforming coders into founders.">
+  <meta name="keywords"
+    content="Startup Club Calicut, Calicut Startups, Coders to Entrepreneurs, KSUM, Cyberpark Calicut">
+
+  <!-- Google Fonts: Outfit (Display) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Design System -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       1. Top Live Announcement Strip & Minimalist Header Bar
+       ========================================================================= -->
+  <div class="top-announcement-strip">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center overflow-hidden text-truncate me-2">
+        <span class="top-announcement-pill">LIVE NOTICE</span>
+        <span id="topAnnouncementText" class="text-truncate">🚨 Calicut Hack2Launch 2026: ₹2,50,000 Cash Pool
+          registrations are live!</span>
+      </div>
+      <div class="d-flex align-items-center gap-2 flex-shrink-0">
+        <a href="#announcements-section" class="text-white text-decoration-none small text-opacity-75 hover-white">View
+          Notices <i class="bi bi-arrow-right"></i></a>
+        <button type="button" class="btn btn-sm btn-outline-light rounded-pill py-0 px-2 small ms-1"
+          onclick="openPostAnnouncementModal()">
+          <i class="bi bi-megaphone-fill me-1"></i> Announce Event
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <header class="top-header-bar">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- Inverted Logo -->
+        <a href="#" class="d-flex align-items-center text-decoration-none">
+          <img src="assets/images/scc_brototype_logo_inverted.svg" alt="Startup Club - Brototype"
+            class="navbar-logo-inverted">
+        </a>
+
+        <!-- Center Nav Links -->
+        <nav class="d-none d-lg-flex align-items-center gap-4">
+          <a href="#hero-ideas" class="text-secondary text-decoration-none fw-semibold small hover-dark">Home</a>
+
+          <a href="#events-section" class="text-secondary text-decoration-none fw-semibold small hover-dark">Events</a>
+          <a href="#announcements-section" class="text-secondary text-decoration-none fw-semibold small hover-dark">
+            <span class="badge bg-black text-neon me-1"
+              style="font-size: 0.68rem; padding: 2px 6px;">LIVE</span>Announcements
+          </a>
+          <a href="#pipeline-section"
+            class="text-secondary text-decoration-none fw-semibold small hover-dark">Roadmap</a>
+          <a href="#resources-section" class="text-secondary text-decoration-none fw-semibold small hover-dark">Grants &
+            Vault</a>
+          <a href="#team-section" class="text-secondary text-decoration-none fw-semibold small hover-dark">Team</a>
+          <a href="#contact-section"
+            class="text-secondary text-decoration-none fw-semibold small hover-dark">Contact</a>
+        </nav>
+
+        <!-- Right Action Button & Profile -->
+        <div class="d-flex align-items-center gap-2 gap-sm-3">
+          <button type="button" onclick="openPostAnnouncementModal()"
+            class="btn-outline-pill px-3 py-2 small d-none d-md-inline-flex align-items-center">
+            <i class="bi bi-megaphone-fill me-1 text-dark"></i> Announce Event
+          </button>
+          <a href="#join" class="btn-black-pill px-4 py-2 small">
+            Pitch Idea <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+          <img src="assets/images/team_member_5.jpg" alt="SCC Leadership"
+            class="header-avatar-circle d-none d-sm-block">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. Starting Hero Section for Startup Ideas (From User Reference Image)
+       ========================================================================= -->
+  <section id="hero-ideas" class="hero-idea-section">
+    <!-- Left Side Founder: Nikhil Kilivayil (CEO, Brototype) -->
+    <div class="hero-flank-founder flank-left d-none d-lg-block">
+      <div class="founder-img-wrapper">
+        <img src="assets/images/nikhil_kilivayil_ceo.png" alt="Nikhil Kilivayil - Founder & CEO, Brototype"
+          class="founder-full-img">
+        <div class="founder-meta-chip">
+          <span class="founder-role-tag">Founder & CEO</span>
+          <h5 class="founder-name">Nikhil Kilivayil</h5>
+          <span class="founder-company"><i class="bi bi-patch-check-fill text-primary me-1"></i>Brototype</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side Founder: Faizal (CTO, Brototype) -->
+    <div class="hero-flank-founder flank-right d-none d-lg-block">
+      <div class="founder-img-wrapper">
+        <img src="assets/images/faizal_cto.png" alt="Faizal - Founder & CTO, Brototype" class="founder-full-img">
+        <div class="founder-meta-chip">
+          <span class="founder-role-tag">Founder & CMO</span>
+          <h5 class="founder-name">Faizal</h5>
+          <span class="founder-company"><i class="bi bi-patch-check-fill text-primary me-1"></i>Brototype</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container position-relative hero-center-content">
+      <!-- Mobile Founders Showcase (< 992px) -->
+      <div class="hero-mobile-founders-strip d-flex d-lg-none justify-content-center align-items-end gap-3 mb-4">
+        <div class="founder-img-wrapper text-center">
+          <img src="assets/images/nikhil_kilivayil_ceo.png" alt="Nikhil Kilivayil" class="founder-full-img">
+          <div class="mt-1">
+            <span class="badge bg-black text-white small">Nikhil Kilivayil</span>
+            <small class="d-block text-muted fw-semibold">CEO, Brototype</small>
+          </div>
+        </div>
+        <div class="founder-img-wrapper text-center">
+          <img src="assets/images/faizal_cto.png" alt="Faizal" class="founder-full-img">
+          <div class="mt-1">
+            <span class="badge bg-black text-white small">Faizal</span>
+            <small class="d-block text-muted fw-semibold">CTO, Brototype</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Headline & Subtitle -->
+      <h1 class="hero-idea-title">
+        Empowering Coders<br>
+        Through <span class="text-green-accent">Startup Execution</span>
+      </h1>
+      <p class="hero-idea-lead">
+        Have a breakthrough tech idea? Startup Club Calicut connects student developers with top venture mentors, ₹10L
+        KSUM Idea Grants, and hands-on hackathons to launch your product.
+      </p>
+
+      <!-- Center Metric Showcase Row -->
+      <div class="hero-metrics-bar my-4">
+        <!-- Metric Card 1: 28+ Incubated MVPs -->
+        <div class="hero-metric-pill">
+          <div class="avatar-stack-mini">
+            <img src="assets/images/team_member_3.jpg" alt="President" class="avatar-mini-circle">
+            <img src="assets/images/team_member_1.jpg" alt="Tech Lead" class="avatar-mini-circle">
+            <img src="assets/images/team_member_2.jpg" alt="Operations" class="avatar-mini-circle">
+            <img src="assets/images/team_member_6.jpg" alt="Innovation" class="avatar-mini-circle">
+            <span class="avatar-mini-badge">6</span>
+          </div>
+          <div class="ms-2 text-start">
+            <div class="text-warning small lh-1 mb-1">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <span class="fw-bold text-dark small d-block">28+ Incubated MVPs</span>
+          </div>
+        </div>
+
+        <!-- Metric Card 2: Pre-Seed Grants Pool -->
+        <div class="hero-metric-pill">
+          <div class="text-start">
+            <small class="text-muted d-block fw-semibold mb-0">Pre-Seed Grants Pool</small>
+            <div class="h5 fw-bold text-dark mb-0">₹65L+</div>
+          </div>
+          <div class="ms-3" style="width: 70px; height: 20px;">
+            <svg viewBox="0 0 80 22" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+              <path d="M0,18 C20,16 40,4 60,10 C70,14 75,2 80,4" fill="none" stroke="#10b981" stroke-width="2.5"
+                stroke-linecap="round" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Metric Card 3: Trusted by Ecosystem -->
+        <div class="hero-metric-pill">
+          <div class="text-start me-2">
+            <small class="text-muted d-block fw-semibold mb-0">Trusted Ecosystem</small>
+            <span class="fw-bold text-dark small">KSUM & Partners</span>
+          </div>
+          <div class="avatar-stack-mini mb-0">
+            <img src="assets/images/founder_talk.jpg" alt="Investor" class="avatar-mini-circle">
+            <img src="assets/images/workshop_session.jpg" alt="Incubator" class="avatar-mini-circle">
+            <span class="avatar-mini-badge">7</span>
+          </div>
+          <i class="bi bi-check-circle-fill text-success fs-5 ms-2"></i>
+        </div>
+      </div>
+
+      <!-- Centered Dual Action Buttons -->
+      <div class="d-flex justify-content-center flex-wrap gap-3 mt-4 pt-2">
+        <a href="#join" class="btn-black-pill px-4 py-3">
+          Get Started Now <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+        <a href="#events-section" class="btn-outline-pill px-4 py-3">
+          View Our Work
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. Hero Neo-Minimalist Dashboard (Wave Cards & 3x3 Action Dock)
+       ========================================================================= -->
+  <section class="py-4 py-md-5" id="events-section">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- LEFT COLUMN: Brand Title, Primary Black Wave Card, 3x3 Action Dock -->
+        <div class="col-lg-6">
+          <div class="pe-lg-3">
+            <h1 class="brand-hero-title">
+              Transforming Coders<br>into Entrepreneurs
+            </h1>
+            <p class="text-secondary mb-4">
+              Calicut's premier student entrepreneurship launchpad turning engineering talent into viable, high-growth
+              venture startups.
+            </p>
+
+            <!-- Signature Jet-Black Wave Card 1 -->
+            <div class="black-squircle-card mb-4">
+              <span class="card-date-badge">Cohort 2026 • Ecosystem Velocity</span>
+              <span class="card-neon-label">Venture Grants & Impact Pool</span>
+              <div class="card-big-value">+ ₹65,00,000</div>
+
+              <!-- Glowing Sinusoidal Wave lines -->
+              <div class="wave-svg-container">
+                <svg viewBox="0 0 400 64" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+                  <!-- Lime Wave -->
+                  <path d="M0,32 C50,10 100,54 150,28 C200,4 250,56 300,24 C350,-2 380,48 400,30"
+                    class="neon-wave-path" />
+                  <!-- Gold Wave -->
+                  <path d="M0,38 C60,56 110,12 170,40 C220,62 270,16 320,44 C360,60 385,18 400,34"
+                    class="neon-wave-path gold" />
+                </svg>
+              </div>
+
+              <!-- Quick Submetrics -->
+              <div class="black-card-submetric mt-3">
+                <span class="text-muted-on-dark small">Active Student Innovators</span>
+                <span class="submetric-val text-neon">+ 520 Builders</span>
+              </div>
+              <div class="black-card-submetric">
+                <span class="text-muted-on-dark small">Production Prototypes</span>
+                <span class="submetric-val">28 Shipped</span>
+              </div>
+            </div>
+
+            <!-- Signature 3x3 Circular Action Dock -->
+            <div class="action-grid-3x3">
+              <!-- Item 1: Events -->
+              <button class="action-item" data-target="events-section">
+                <div class="action-circle-btn"><i class="bi bi-calendar-event-fill"></i></div>
+                <span class="action-label">Events</span>
+              </button>
+
+              <!-- Item 2: Announce Event -->
+              <button class="action-item" onclick="openPostAnnouncementModal()" title="Announce an Event or Notice">
+                <div class="action-circle-btn" style="background: var(--jet-black); color: var(--neon-lime);"><i
+                    class="bi bi-megaphone-fill"></i></div>
+                <span class="action-label font-weight-bold">Announce</span>
+              </button>
+
+              <!-- Item 3: Pipeline / Roadmap -->
+              <button class="action-item" data-target="pipeline-section">
+                <div class="action-circle-btn"><i class="bi bi-bezier2"></i></div>
+                <span class="action-label">Pipeline</span>
+              </button>
+
+              <!-- Item 4: Spaces / Sandbox -->
+              <button class="action-item" data-target="vision-section">
+                <div class="action-circle-btn"><i class="bi bi-grid-fill"></i></div>
+                <span class="action-label">Spaces</span>
+              </button>
+
+              <!-- Item 5: Mentors -->
+              <button class="action-item" data-target="team-section">
+                <div class="action-circle-btn"><i class="bi bi-people-fill"></i></div>
+                <span class="action-label">Mentors</span>
+              </button>
+
+              <!-- Item 6: Grants -->
+              <button class="action-item" data-target="resources-section">
+                <div class="action-circle-btn"><i class="bi bi-graph-up-arrow"></i></div>
+                <span class="action-label">Grants</span>
+              </button>
+
+              <!-- Item 7: Vault -->
+              <button class="action-item" data-target="resources-section">
+                <div class="action-circle-btn"><i class="bi bi-folder2-open"></i></div>
+                <span class="action-label">Vault</span>
+              </button>
+
+              <!-- Item 8: Join -->
+              <button class="action-item" data-target="join">
+                <div class="action-circle-btn"><i class="bi bi-arrow-down"></i></div>
+                <span class="action-label">Join</span>
+              </button>
+
+              <!-- Item 9: Pitch -->
+              <button class="action-item" data-target="pitch-modal">
+                <div class="action-circle-btn"><i class="bi bi-plus-lg"></i></div>
+                <span class="action-label">Pitch</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Stacked Multi-Wave Card & Trending Initiatives List -->
+        <div class="col-lg-6">
+          <div class="ps-lg-3">
+
+            <!-- Compact Top Card (July cycle) -->
+            <div class="black-squircle-card mb-3 py-3 px-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <span class="card-date-badge mb-1">Pre-Seed Grant Batch</span>
+                  <div class="card-neon-label gold mb-0">KSUM Idea Grant Disbursal</div>
+                  <div class="h4 fw-bold text-white mb-0">+ ₹10,00,000</div>
+                </div>
+                <div style="width: 130px; height: 36px;">
+                  <svg viewBox="0 0 130 36" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+                    <path d="M0,24 C30,4 60,32 90,8 C110,2 125,28 130,16" class="neon-wave-path gold"
+                      style="stroke-width: 3;" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Multi-Tier Black Squircle Card (Matching Aug card in screenshot) -->
+            <div class="black-squircle-card mb-4">
+              <span class="card-date-badge">01 - 31 Aug • Prototyping Sprint</span>
+              <span class="card-neon-label">Monthly MVP Shipments</span>
+              <div class="card-big-value">+ 28 MVPs</div>
+
+              <!-- Sinusoidal Waves -->
+              <div class="wave-svg-container" style="height: 48px;">
+                <svg viewBox="0 0 400 48" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+                  <path d="M0,24 C45,6 90,42 140,20 C190,2 240,40 290,18 C340,0 375,36 400,22" class="neon-wave-path" />
+                </svg>
+              </div>
+
+              <!-- Sub-Tier 1 -->
+              <div class="black-card-submetric">
+                <div>
+                  <span class="text-muted-on-dark small d-block">Calicut Hack2Launch Prize Pool</span>
+                  <span class="submetric-val">+ ₹2,50,000</span>
+                </div>
+                <div class="submetric-sparkline">
+                  <svg viewBox="0 0 90 24" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+                    <path d="M0,16 C20,6 45,22 65,10 C78,4 85,18 90,12" class="neon-wave-path"
+                      style="stroke-width: 2.5;" />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Sub-Tier 2 -->
+              <div class="black-card-submetric">
+                <div>
+                  <span class="text-muted-on-dark small d-block">Founder Masterclasses</span>
+                  <span class="submetric-val">+ 42 Sessions</span>
+                </div>
+                <div class="submetric-sparkline">
+                  <svg viewBox="0 0 90 24" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+                    <path d="M0,12 C25,20 50,4 70,16 C80,22 86,8 90,14" class="neon-wave-path gold"
+                      style="stroke-width: 2.5;" />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Sub-Tier 3 -->
+              <div class="black-card-submetric pb-1">
+                <div>
+                  <span class="text-muted-on-dark small d-block">Partner Angel Syndicates</span>
+                  <span class="submetric-val">+ 15 Angels</span>
+                </div>
+                <div class="submetric-sparkline">
+                  <svg viewBox="0 0 90 24" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+                    <path d="M0,8 C22,2 45,20 68,6 C80,0 85,14 90,8" class="neon-wave-path"
+                      style="stroke-width: 2.5;" />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="text-center pt-2">
+                <i class="bi bi-chevron-down text-muted-on-dark small"></i>
+              </div>
+            </div>
+
+            <!-- Trending Initiatives & Events (Tesla/Amazon List Pattern) -->
+            <div class="trending-list-card">
+              <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2">
+                <div>
+                  <h3 class="h5 fw-bold mb-0">Trending Initiatives</h3>
+                  <span class="text-muted small">Live Schedule & Milestones</span>
+                </div>
+                <button type="button" class="btn-outline-pill py-1 px-3 small" onclick="openPostAnnouncementModal()">
+                  <i class="bi bi-megaphone-fill me-1"></i> Announce Event
+                </button>
+              </div>
+
+              <!-- Rendered via app.js -->
+              <div id="trendingListContainer"></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. Dedicated Ecosystem Announcements & Event Notices Section
+       ========================================================================= -->
+  <section class="py-5" id="announcements-section">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 gap-3">
+        <div>
+          <span class="section-eyebrow">L I V E &nbsp; B U L L E T I N</span>
+          <h2 class="section-heading">Ecosystem Announcements & Event Notices</h2>
+          <p class="section-desc mb-0">Official updates from Startup Club Calicut on upcoming hackathons, KSUM grants,
+            and founder workshops.</p>
+        </div>
+        <button type="button" onclick="openPostAnnouncementModal()"
+          class="btn-black-pill px-4 py-2 flex-shrink-0 align-self-start align-self-md-auto">
+          <i class="bi bi-megaphone-fill me-2 text-neon"></i> Announce an Event
+        </button>
+      </div>
+
+      <!-- Filter Categories -->
+      <div class="filter-pills-bar mb-4" id="announcementFilters">
+        <button type="button" class="filter-pill-btn active" data-category="all">All Bulletins</button>
+        <button type="button" class="filter-pill-btn" data-category="Hackathons">Hackathons</button>
+        <button type="button" class="filter-pill-btn" data-category="Grants & Funding">Grants & Funding</button>
+        <button type="button" class="filter-pill-btn" data-category="Mentorship">Mentorship</button>
+        <button type="button" class="filter-pill-btn" data-category="Incubation">Incubation</button>
+      </div>
+
+      <!-- Announcements List Container -->
+      <div id="announcementsList">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. Vision & Mission (Ceramic Dual Cards)
+       ========================================================================= -->
+  <section class="py-5" id="vision-section">
+    <div class="container">
+      <div class="mb-4">
+        <span class="section-eyebrow">F O U N D A T I O N</span>
+        <h2 class="section-heading">Vision & Mission</h2>
+        <p class="section-desc">Catalyzing a premier founder ecosystem rooted in Calicut's engineering institutions.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Vision -->
+        <div class="col-lg-5">
+          <div class="black-squircle-card h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-inline-flex p-2 rounded-circle bg-dark border border-secondary text-white mb-3">
+                <i class="bi bi-eye-fill fs-5"></i>
+              </div>
+              <h3 class="h4 fw-bold text-white mb-3">Our Vision</h3>
+              <p class="text-muted-on-dark lead fs-6 mb-4">
+                "To create a vibrant, self-sustaining entrepreneurial ecosystem where students and young innovators
+                transform technical ideas into impactful, globally scalable businesses."
+              </p>
+            </div>
+            <div class="p-3 rounded-4 bg-black border border-dark">
+              <small class="text-muted-on-dark d-block">Calicut Advantage:</small>
+              <span class="card-neon-label mb-0">Kerala's fastest growing tech and incubator hub.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mission -->
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="ceramic-card p-4">
+                <div class="action-circle-btn mb-3" style="width: 44px; height: 44px; font-size: 1.1rem;"><i
+                    class="bi bi-lightbulb"></i></div>
+                <h4 class="h6 fw-bold mb-1">Entrepreneurial Thinking</h4>
+                <p class="text-secondary small mb-0">Encouraging calculated risk-taking and customer discovery among
+                  student engineers.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="ceramic-card p-4">
+                <div class="action-circle-btn mb-3" style="width: 44px; height: 44px; font-size: 1.1rem;"><i
+                    class="bi bi-briefcase"></i></div>
+                <h4 class="h6 fw-bold mb-1">Business & Leadership</h4>
+                <p class="text-secondary small mb-0">Teaching SaaS unit economics, pricing, team building, and executive
+                  leadership.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="ceramic-card p-4">
+                <div class="action-circle-btn mb-3" style="width: 44px; height: 44px; font-size: 1.1rem;"><i
+                    class="bi bi-people"></i></div>
+                <h4 class="h6 fw-bold mb-1">Founder Mentorship</h4>
+                <p class="text-secondary small mb-0">Direct 1-on-1 office hours with seasoned tech entrepreneurs and
+                  active investors.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="ceramic-card p-4">
+                <div class="action-circle-btn mb-3" style="width: 44px; height: 44px; font-size: 1.1rem;"><i
+                    class="bi bi-rocket-takeoff"></i></div>
+                <h4 class="h6 fw-bold mb-1">Seed Grant Support</h4>
+                <p class="text-secondary small mb-0">Assisting student ventures to unlock ₹10L Kerala Startup Mission
+                  (KSUM) Idea Grants.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. The 4-Stage Founder Pipeline (Roadmap)
+       ========================================================================= -->
+  <section class="py-5" id="pipeline-section">
+    <div class="container">
+      <div class="mb-4">
+        <span class="section-eyebrow">M E T H O D O L O G Y</span>
+        <h2 class="section-heading">The Coder-to-Founder Pipeline</h2>
+        <p class="section-desc">Our systematic progression taking developers from their first commit to venture funding.
+        </p>
+      </div>
+
+      <div class="row" id="roadmapGrid">
+        <!-- Injected via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. Startup Resources & Playbook Hub
+       ========================================================================= -->
+  <section class="py-5" id="resources-section">
+    <div class="container">
+      <div class="mb-4">
+        <span class="section-eyebrow">K N O W L E D G E &nbsp; V A U L T</span>
+        <h2 class="section-heading">Startup Resources & Playbooks</h2>
+        <p class="section-desc">Practical guidebooks, investor pitch decks, and KSUM grant application kits.</p>
+      </div>
+
+      <div class="clean-search-box">
+        <i class="bi bi-search clean-search-icon"></i>
+        <input type="text" id="resourceSearch" class="clean-search-input"
+          placeholder="Search pitch decks, KSUM grant guides, templates...">
+      </div>
+
+      <div class="filter-pills-bar" id="resourceFilters">
+        <button class="filter-pill-btn active" data-category="all">All Resources</button>
+        <button class="filter-pill-btn" data-category="guides">Founder Guides</button>
+        <button class="filter-pill-btn" data-category="templates">Pitch Decks</button>
+        <button class="filter-pill-btn" data-category="grants">KSUM Toolkits</button>
+        <button class="filter-pill-btn" data-category="tech">MVP Blueprints</button>
+      </div>
+
+      <div class="row" id="resourcesGrid">
+        <!-- Injected via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. Team & Mentorship Network
+       ========================================================================= -->
+  <section class="py-5" id="team-section">
+    <div class="container">
+      <div class="mb-4">
+        <span class="section-eyebrow">L E A D E R S H I P</span>
+        <h2 class="section-heading">Core Leadership Team</h2>
+        <p class="section-desc">The student builders, technical architects, and community organizers leading Startup
+          Club Calicut.
+        </p>
+      </div>
+
+      <div class="filter-pills-bar" id="teamFilters">
+        <button class="filter-pill-btn active" data-category="all">All Members</button>
+        <button class="filter-pill-btn" data-category="core">Core Leadership</button>
+        <button class="filter-pill-btn" data-category="tech">Technology & Hackathons</button>
+        <button class="filter-pill-btn" data-category="ops">Operations & Community</button>
+      </div>
+
+      <div class="row" id="teamGrid">
+        <!-- Injected via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. Club Activity Gallery
+       ========================================================================= -->
+  <section class="py-5" id="gallery-section">
+    <div class="container">
+      <div class="mb-4">
+        <span class="section-eyebrow">M O M E N T S</span>
+        <h2 class="section-heading">Club Activity Gallery</h2>
+        <p class="section-desc">Snapshots of hackathon midnight sprints, founder AMAs, and student demo days.</p>
+      </div>
+
+      <div class="row" id="galleryGrid">
+        <!-- Injected via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. Onboarding Portal (Join & Pitch)
+       ========================================================================= -->
+  <section class="py-5" id="join">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="ceramic-card p-4 p-md-5">
+
+            <div class="d-flex gap-2 mb-4">
+              <button class="btn-black-pill" id="tabJoinBtn">Join as Member</button>
+              <button class="btn-outline-pill" id="tabPitchBtn">Pitch Startup Idea</button>
+            </div>
+
+            <!-- Join Member Form -->
+            <form id="joinClubForm">
+              <h3 class="h4 fw-bold mb-2">Student Membership Application</h3>
+              <p class="text-secondary small mb-4">Free membership provides pass access to all hackathons, developer
+                sandboxes, and cloud credits.</p>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label-clean">Full Name *</label>
+                  <input type="text" id="memberFullName" class="form-input-clean" placeholder="Your name" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label-clean">Email *</label>
+                  <input type="email" id="memberEmail" class="form-input-clean" placeholder="you@example.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label-clean">College / Institute *</label>
+                  <input type="text" id="memberCollege" class="form-input-clean" placeholder="NIT Calicut / GEC Calicut"
+                    required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label-clean">Primary Focus</label>
+                  <select class="form-input-clean" id="memberInterest">
+                    <option>Full Stack Web / Mobile</option>
+                    <option>AI / Machine Learning</option>
+                    <option>Product & UI/UX</option>
+                    <option>Business / Growth</option>
+                  </select>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn-black-pill w-100 justify-content-center py-3">
+                    Submit Member Application <i class="bi bi-arrow-right ms-2"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <!-- Pitch Idea Form (Hidden initially) -->
+            <form id="pitchIdeaForm" class="d-none">
+              <h3 class="h4 fw-bold mb-2">Submit Your Startup Idea</h3>
+              <p class="text-secondary small mb-4">Get fast-track feedback from Calicut Angel Network mentors and apply
+                for seed incubation.</p>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label-clean">Founder Name *</label>
+                  <input type="text" id="pitchFounderName" class="form-input-clean" placeholder="Your name" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label-clean">Startup Name *</label>
+                  <input type="text" id="pitchStartupName" class="form-input-clean" placeholder="e.g. Tracer AI"
+                    required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label-clean">Problem & Solution *</label>
+                  <textarea class="form-input-clean" rows="3" placeholder="What are you building and for whom?"
+                    required></textarea>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn-black-pill w-100 justify-content-center py-3">
+                    Submit for Incubation <i class="bi bi-rocket-takeoff ms-2"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. Contact & Calicut Coordinates
+       ========================================================================= -->
+  <section class="py-5" id="contact-section">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5">
+          <span class="section-eyebrow">C O N N E C T</span>
+          <h2 class="section-heading">Get in Touch</h2>
+          <p class="text-secondary mb-4">Reach out for college chapter partnerships, sponsorship, or mentorship
+            inquiries.</p>
+
+          <div class="mb-3">
+            <small class="text-muted d-block">Official Email</small>
+            <a href="mailto:hello@startupclubcalicut.org"
+              class="text-dark fw-bold text-decoration-none">hello@startupclubcalicut.org</a>
+          </div>
+          <div class="mb-3">
+            <small class="text-muted d-block">Sandbox Coordinates</small>
+            <span class="text-secondary">Cyberpark Kozhikode, Palazhi, Calicut, Kerala 673016</span>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="ceramic-card p-4">
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-input-clean" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-input-clean" placeholder="Your Email" required>
+                </div>
+                <div class="col-12">
+                  <textarea class="form-input-clean" rows="3" placeholder="Message" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-black-pill">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. Minimalist Footer
+       ========================================================================= -->
+  <footer class="py-4 border-top">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-muted small">
+        <div class="d-flex align-items-center gap-3 mb-2 mb-md-0">
+          <img src="assets/images/scc_brototype_logo_inverted.svg" alt="Startup Club Brototype"
+            style="height: 36px; object-fit: contain;">
+          <span><strong>Startup Club Calicut</strong> • Transforming Coders into Entrepreneurs © 2026.</span>
+        </div>
+        <div class="d-flex gap-3">
+          <a href="#pipeline-section" class="text-muted text-decoration-none">Pipeline</a>
+          <a href="#events-section" class="text-muted text-decoration-none">Events</a>
+          <a href="#resources-section" class="text-muted text-decoration-none">Vault</a>
+          <a href="#join" class="text-muted text-decoration-none">Join</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       11. Floating Bottom Action Dock (Reference UI Pattern: [ ← ] [ + ] [ ✕ ])
+       ========================================================================= -->
+  <div class="floating-bottom-dock">
+    <button class="dock-circle-btn" id="dockBackBtn" title="Back to Top">
+      <i class="bi bi-arrow-left"></i>
+    </button>
+    <button class="dock-circle-btn primary-action" id="dockCreateBtn" title="Pitch Startup Idea / Join">
+      <i class="bi bi-plus-lg"></i>
+    </button>
+    <button class="dock-circle-btn" id="dockCloseBtn" title="Quick Scroll">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+  </div>
+
+  <!-- =========================================================================
+       12. Modals (RSVP, Resource, Lightbox)
+       ========================================================================= -->
+  <!-- RSVP Pass Modal -->
+  <div class="modal fade" id="rsvpModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-ceramic-content">
+        <div class="modal-ceramic-header d-flex justify-content-between align-items-center">
+          <div>
+            <span class="badge bg-light text-dark border small text-uppercase fw-bold mb-1">Fast-Track Pass</span>
+            <h4 class="h5 fw-bold mb-0" id="rsvpModalEventTitle">Event Registration</h4>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-ceramic-body">
+          <div id="rsvpFormContainer">
+            <div class="p-3 rounded-4 bg-light mb-4" id="rsvpModalMeta"></div>
+            <form id="rsvpForm">
+              <input type="hidden" id="rsvpEventId">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label-clean">Full Name *</label>
+                  <input type="text" id="rsvpName" class="form-input-clean" placeholder="e.g. Rahul Sen" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label-clean">Email *</label>
+                  <input type="email" id="rsvpEmail" class="form-input-clean" placeholder="rahul@example.com" required>
+                </div>
+                <div class="col-md-12">
+                  <label class="form-label-clean">College / Company *</label>
+                  <input type="text" id="rsvpCollege" class="form-input-clean" placeholder="e.g. NIT Calicut" required>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn-black-pill w-100 justify-content-center py-3">
+                    Generate Entry Pass <i class="bi bi-arrow-right ms-1"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Digital Pass Ticket -->
+          <div id="rsvpTicketContainer" class="d-none">
+            <div id="generatedTicketContent"></div>
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <span class="text-muted small">Show this pass at event check-in.</span>
+              <button class="btn-black-pill" onclick="window.print()">Print / Save Pass</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resource Modal -->
+  <div class="modal fade" id="resourceModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-ceramic-content">
+        <div class="modal-ceramic-header d-flex justify-content-between align-items-center">
+          <div>
+            <div id="resModalMeta" class="mb-2"></div>
+            <h4 class="h5 fw-bold mb-0" id="resModalTitle">Resource Preview</h4>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-ceramic-body">
+          <p class="text-secondary mb-3" id="resModalDesc"></p>
+          <div id="resModalPreview" class="mb-4"></div>
+          <div class="d-flex justify-content-end gap-2">
+            <button type="button" class="btn-outline-pill" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn-black-pill" id="resModalDownloadBtn">
+              Download Toolkit <i class="bi bi-download ms-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content modal-ceramic-content overflow-hidden">
+        <div class="position-relative">
+          <button type="button" class="btn-close position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+          <img src="" alt="" id="lightboxImg"
+            style="width: 100%; max-height: 75vh; object-fit: contain; background: #000;">
+          <div class="p-3 bg-white">
+            <h5 class="fw-bold mb-1" id="lightboxTitle"></h5>
+            <p class="text-muted small mb-0" id="lightboxCaption"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Announcement Detail Modal -->
+  <div class="modal fade" id="announcementModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-ceramic-content">
+        <div class="modal-ceramic-header d-flex justify-content-between align-items-center">
+          <div>
+            <div id="annModalMeta" class="mb-2"></div>
+            <h4 class="h5 fw-bold mb-0" id="annModalTitle">Announcement Details</h4>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-ceramic-body" id="annModalBody">
+          <!-- Injected via JS -->
+        </div>
+        <div class="p-3 bg-light border-top d-flex justify-content-end gap-2">
+          <button type="button" class="btn-outline-pill" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn-black-pill" id="annModalActionBtn">Explore Event</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Post / Broadcast New Announcement Modal -->
+  <div class="modal fade" id="postAnnouncementModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-ceramic-content">
+        <div class="modal-ceramic-header d-flex justify-content-between align-items-center">
+          <div>
+            <span class="badge bg-dark text-white font-monospace small mb-1">Broadcaster Desk</span>
+            <h4 class="h5 fw-bold mb-0">Announce an Event or Notice</h4>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-ceramic-body">
+          <form id="postAnnouncementForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label-clean">Event / Notice Title *</label>
+                <input type="text" id="newAnnTitle" class="form-input-clean" placeholder="e.g. Calicut AI Ideathon 2026"
+                  required>
+              </div>
+              <div class="col-md-3">
+                <label class="form-label-clean">Category *</label>
+                <select id="newAnnCategory" class="form-input-clean">
+                  <option value="Hackathons">Hackathon & Ideathon</option>
+                  <option value="Grants & Funding">Grant & Funding</option>
+                  <option value="Mentorship">Founder Mentorship</option>
+                  <option value="Incubation">Incubator Cohort</option>
+                  <option value="General Notice">General Club Notice</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label class="form-label-clean">Priority Badge</label>
+                <select id="newAnnBadge" class="form-input-clean">
+                  <option value="New Event">New Event</option>
+                  <option value="Urgent">Urgent</option>
+                  <option value="Major Update">Major Update</option>
+                  <option value="Grant Notice">Grant Notice</option>
+                  <option value="Official Notice">Official Notice</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-clean">Date & Time / Deadline *</label>
+                <input type="text" id="newAnnDate" class="form-input-clean" placeholder="e.g. Oct 25, 2026 • 10:00 AM"
+                  required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-clean">Action Target / Registration Link</label>
+                <input type="text" id="newAnnLink" class="form-input-clean" placeholder="#events-section or https://..."
+                  value="#events-section">
+              </div>
+              <div class="col-12">
+                <label class="form-label-clean">Short Summary (Visible on Notice Card) *</label>
+                <input type="text" id="newAnnSummary" class="form-input-clean"
+                  placeholder="1-2 sentences highlighting prizes, speakers, or deadlines" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label-clean">Full Event Description & Eligibility</label>
+                <textarea id="newAnnContent" class="form-input-clean" rows="3"
+                  placeholder="Provide complete guidelines, venue details, and requirements..."></textarea>
+              </div>
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn-black-pill w-100 justify-content-center py-3">
+                  <i class="bi bi-broadcast me-1"></i> Publish Announcement Live
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- Application Logic -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

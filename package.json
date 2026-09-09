@@ -1,0 +1,15 @@
+{
+  "name": "startup-club-calicut",
+  "version": "1.0.0",
+  "description": "Startup Club Calicut - Transforming Coders into Entrepreneurs",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3000 --open",
+    "start": "vite --port 3000 --open",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.2"
+  }
+}
