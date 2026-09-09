@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --port 3000 --open",
     "start": "vite --port 3000 --open",
-    "build": "vite build",
+    "build": "vite build && node -e \"const fs = require('fs'); fs.cpSync('assets', 'dist/assets', { recursive: true }); fs.cpSync('js', 'dist/js', { recursive: true });\"",
     "preview": "vite preview"
   },
   "devDependencies": {
