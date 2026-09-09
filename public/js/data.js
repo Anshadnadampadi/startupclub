@@ -344,7 +344,7 @@ var SCC_DATA = {
       name: "Mohammad Anshad",
       role: "Asst Manager",
       tagline: "Full-stack architect, open-source contributor, and Calicut Hack2Launch lead organizer.",
-      image: "/assets/images/team_member_1.jpg",
+      image: "/assets/images/team_member_5.jpg",
       category: "tech",
       categories: ["core", "tech"],
       badge: "Asst Manager",
