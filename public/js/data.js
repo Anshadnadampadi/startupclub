@@ -326,13 +326,13 @@ var SCC_DATA = {
   team: [
     {
       id: "tm-01",
-      name: "Mohammed Farhan",
-      role: "President & Lead Founder",
-      tagline: "Directing club strategy, founder masterclasses, and pre-seed venture syndicates.",
+      name: "Mohammed Saad",
+      role: "Club Manager",
+      tagline: "Directing club strategy",
       image: "/assets/images/team_member_3.jpg",
       category: "core",
       categories: ["core", "leadership"],
-      badge: "President & Founder",
+      badge: "Club Manager",
       socials: {
         linkedin: "https://linkedin.com",
         github: "https://github.com",
@@ -341,40 +341,10 @@ var SCC_DATA = {
     },
     {
       id: "tm-02",
-      name: "Adil Shereef",
-      role: "Head of Technology & Hackathons",
-      tagline: "Full-stack architect, open-source contributor, and Calicut Hack2Launch lead organizer.",
-      image: "/assets/images/team_member_1.jpg",
-      category: "tech",
-      categories: ["core", "tech"],
-      badge: "Tech Lead",
-      socials: {
-        linkedin: "https://linkedin.com",
-        github: "https://github.com",
-        twitter: "https://twitter.com"
-      }
-    },
-    {
-      id: "tm-03",
-      name: "Rahul K. Menon",
-      role: "Head of Operations & Incubation",
-      tagline: "Managing incubator desk logistics, mentor office hours, and partner relations.",
-      image: "/assets/images/team_member_2.jpg",
-      category: "ops",
-      categories: ["core", "ops"],
-      badge: "Operations Lead",
-      socials: {
-        linkedin: "https://linkedin.com",
-        github: "https://github.com",
-        twitter: "https://twitter.com"
-      }
-    },
-    {
-      id: "tm-04",
       name: "Mohammad Anshad",
       role: "Asst Manager",
-      tagline: "Building student venture developer toolkits, API sandboxes, and cloud infrastructure.",
-      image: "/assets/images/team_member_5.jpg",
+      tagline: "Full-stack architect, open-source contributor, and Calicut Hack2Launch lead organizer.",
+      image: "/assets/images/team_member_1.jpg",
       category: "tech",
       categories: ["core", "tech"],
       badge: "Asst Manager",
@@ -385,9 +355,39 @@ var SCC_DATA = {
       }
     },
     {
+      id: "tm-03",
+      name: "Ameen Mohammad KK",
+      role: "Program Coordinator",
+      tagline: "Managing incubator desk logistics, mentor office hours, and partner relations.",
+      image: "/assets/images/team_member_1.jpg",
+      category: "ops",
+      categories: ["core", "ops"],
+      badge: "Program Coordinator",
+      socials: {
+        linkedin: "https://linkedin.com",
+        github: "https://github.com",
+        twitter: "https://twitter.com"
+      }
+    },
+    {
+      id: "tm-04",
+      name: "Abdul Shamil kk",
+      role: "Community Coordinator",
+      tagline: "Building student venture developer toolkits, API sandboxes, and cloud infrastructure.",
+      image: "/assets/images/team_member_2.jpg",
+      category: "tech",
+      categories: ["core", "tech"],
+      badge: "Community Coordinator",
+      socials: {
+        linkedin: "https://linkedin.com",
+        github: "https://github.com",
+        twitter: "https://twitter.com"
+      }
+    },
+    {
       id: "tm-05",
-      name: "Muhammed Mishal CC",
-      role: "Head of Community & Venture Outreach",
+      name: "Mohammad Mishal CC",
+      role: "Finance Coordinator",
       tagline: "Connecting engineering campuses, alumni angels, and Kerala Startup Mission networks.",
       image: "/assets/images/team_member_4.jpg",
       category: "ops",
@@ -402,12 +402,12 @@ var SCC_DATA = {
     {
       id: "tm-06",
       name: "Muhammad Habeeb",
-      role: "Head of Product Innovation & Growth",
+      role: "Media Coordinator",
       tagline: "Leading customer validation sprints, UI/UX prototyping, and pre-incubator venture cohorts.",
       image: "/assets/images/team_member_6.jpg",
       category: "core",
       categories: ["core", "tech", "leadership"],
-      badge: "Content Coordinator",
+      badge: "Media Coordinator",
       socials: {
         linkedin: "https://linkedin.com",
         github: "https://github.com",
