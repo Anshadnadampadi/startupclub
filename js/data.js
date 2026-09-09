@@ -413,6 +413,21 @@ var SCC_DATA = {
         github: "https://github.com",
         twitter: "https://twitter.com"
       }
+    },
+    {
+      id: "tm-07",
+      name: "Outreach Coordinator",
+      role: "Outreach Coordinator",
+      tagline: "Connecting student founders with external startup ecosystem partners and campus communities.",
+      image: "/assets/images/team_member_7.jpg",
+      category: "ops",
+      categories: ["core", "ops"],
+      badge: "Outreach Coordinator",
+      socials: {
+        linkedin: "https://linkedin.com",
+        github: "https://github.com",
+        twitter: "https://twitter.com"
+      }
     }
   ],
 
