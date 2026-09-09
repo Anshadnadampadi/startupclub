@@ -3,7 +3,7 @@
  * "Transforming Coders into Entrepreneurs"
  */
 
-const SCC_DATA = {
+var SCC_DATA = {
   stats: {
     members: 520,
     mvpsBuilt: 28,

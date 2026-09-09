@@ -3,11 +3,6 @@
  * Interactive handlers for 3x3 action dock, trending list, filters, modals & pass generator
  */
 
-// Safely obtain SCC_DATA from global scope
-let SCC_DATA = (typeof window !== 'undefined' && window.SCC_DATA)
-  ? window.SCC_DATA
-  : ((typeof globalThis !== 'undefined' && globalThis.SCC_DATA) ? globalThis.SCC_DATA : {});
-
 // Global filter & search state
 let activeAnnouncementCategory = 'all';
 let activeResourceCategory = 'all';
@@ -15,11 +10,6 @@ let resourceSearchQuery = '';
 let activeTeamCategory = 'all';
 
 function startApp() {
-  if (typeof window !== 'undefined' && window.SCC_DATA) {
-    SCC_DATA = window.SCC_DATA;
-  } else if (typeof globalThis !== 'undefined' && globalThis.SCC_DATA) {
-    SCC_DATA = globalThis.SCC_DATA;
-  }
 
   initActionDock();
   initTrendingList();
